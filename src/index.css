@@ -1,0 +1,159 @@
+/* App.css */
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.passwordRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.passwordDisplay {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #333;
+  padding: 10px 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.05rem;
+  letter-spacing: 0.3px;
+}
+
+.passwordDisplay:focus {
+  outline: 2px solid #ddd;
+  outline-offset: 1px;
+}
+
+button,
+select,
+input[type="checkbox"] {
+  font: inherit;
+}
+
+.copyButton,
+.generateButton {
+  border: 1px solid #ddd;
+  background: #f8f9fa;
+  color: #333;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.copyButton:hover,
+.generateButton:hover {
+  background: #e9ecef;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.copyButton:active,
+.generateButton:active {
+  background: #dde2e6;
+}
+
+.copyButton:disabled,
+.generateButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.feedback {
+  margin: 8px 0 0;
+  font-size: 0.92rem;
+  color: #333;
+}
+
+.controls {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.fieldLabel {
+  font-size: 0.94rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.select {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.select:focus {
+  outline: 2px solid #ddd;
+  outline-offset: 1px;
+}
+
+.checkboxGroup {
+  margin: 0;
+  padding: 10px 12px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.error {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #333;
+}
+
+.generateButton {
+  width: 100%;
+  font-weight: 600;
+}
